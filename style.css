@@ -1,0 +1,144 @@
+body {
+    margin:0;
+    padding:0;
+    font-size: 15px; /*tamaño de letra*/
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(https://i.pinimg.com/736x/c1/ca/ad/c1caad2e2f22a11f1c0d602d8c9e4119.jpg);
+}
+
+a{ /*Enlaces*/ 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{ /*cabecera*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav{ /*barra de navegacion*/
+    display: flex;
+    justify-content: flex-end;
+    background-color: #489db7;
+    height: 50px;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex; /*hacer elementos flexibles*/
+    list-style: none; /*quitar decoracion de lista*/
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: #489db7;
+}
+
+nav .nav-right-section a{/*espacio hacia la derecha y color negro*/
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+}
+
+#profile{
+    width: 50px;
+    border-radius: 50%;
+    margin-left:-20px;
+}
+
+main {
+    margin-top: 100px; /*espaciado exterior de arriba*/
+    text-align: center;
+}
+
+main .main-logo{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px; /*espaciado exterior de abajo*/
+}
+
+main .main-logo img{
+    width: 400px; /*tamaño de la imagen*/
+}
+
+main .main-input{ /*cajitab del buscador-input*/
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{ /*cajita del buscador*/
+    width: 550px;
+    border-radius: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+main .main-input input{
+    width: 435px;
+    height: 25px;
+    border: none;
+    outline:none;
+}
+
+main .main-buttons{
+    width: 500px;
+    margin: 0 auto; /*centro la cajita*/
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 30px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px; /*tamaño de letra*/
+    border-radius: 8px;
+    padding: 0 15px; /*espacio interior*/
+    margin-right: 30px;
+}
+
+/*Animación con hover, transicion*/
+main .main-buttons button:hover{
+    background-color: #cbaae8;
+    border: 1px solid #cbaae8;
+    box-shadow: 0 1px 1px #000001; /*efeccto de sombra*/
+}
+
+footer{
+    width: 100%;
+    height: 30px; /*Altura del footer*/
+    position: absolute;
+    bottom:0; /*Lo coloca en la parte inferior*/
+    display:grid;
+    grid-template-columns: 1fr 1fr; /*Divide en 2 fracciones iguales*/
+    font-weight: bold;
+    align-items: center;
+    font-size: 10px;
+    background-color: #667ebd;
+    border-top: 1px solid #cecece; /*Borde superior*/
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none; /*Quitar puntitos*/
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px; /*Espaciado entre los enlaces*/
+    color:#ffffff; /*Cambiar letras de color*/
+}
